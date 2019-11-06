@@ -120,7 +120,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-w6-OIL">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" value="1" minimumValue="1" maximumValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-w6-OIL">
                                                 <rect key="frame" x="5.5" y="28.5" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="cardValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hfc-OX-xee"/>

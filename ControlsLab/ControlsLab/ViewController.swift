@@ -1,7 +1,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet var valueLabels: [UILabel]!
     @IBOutlet var suitImageViews: [UIImageView]!
@@ -13,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBAction func newSuitSelected(_ sender: UISegmentedControl) {
     }
+    
     @IBAction func cardValueChanged(_ sender: UIStepper) {
     }
 }

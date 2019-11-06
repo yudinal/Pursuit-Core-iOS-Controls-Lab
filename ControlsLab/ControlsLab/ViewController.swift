@@ -11,6 +11,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newSuitSelected(_ sender: UISegmentedControl) {
+        guard let suit = Suit(rawValue: sender.selectedSegmentIndex) else {
+            fatalError("Developer Error: Unknown suit")
+        }
+        
     }
     
     @IBAction func cardValueChanged(_ sender: UIStepper) {

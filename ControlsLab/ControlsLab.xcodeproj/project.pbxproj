@@ -15,6 +15,7 @@
 		CDD21D1623732531005E6E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD21D1423732531005E6E32 /* LaunchScreen.storyboard */; };
 		CDD21D2123732532005E6E32 /* ControlsLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D2023732532005E6E32 /* ControlsLabTests.swift */; };
 		CDD21D2C23732C24005E6E32 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D2B23732C24005E6E32 /* Suit.swift */; };
+		CDD21D2E23732D75005E6E32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D2D23732D74005E6E32 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CDD21D2023732532005E6E32 /* ControlsLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsLabTests.swift; sourceTree = "<group>"; };
 		CDD21D2223732532005E6E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD21D2B23732C24005E6E32 /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
+		CDD21D2D23732D74005E6E32 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				CDD21D092373252C005E6E32 /* AppDelegate.swift */,
 				CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */,
 				CDD21D0D2373252C005E6E32 /* ViewController.swift */,
+				CDD21D2D23732D74005E6E32 /* Card.swift */,
 				CDD21D2B23732C24005E6E32 /* Suit.swift */,
 				CDD21D0F2373252C005E6E32 /* Main.storyboard */,
 				CDD21D1223732531005E6E32 /* Assets.xcassets */,
@@ -205,6 +208,7 @@
 			files = (
 				CDD21D0E2373252C005E6E32 /* ViewController.swift in Sources */,
 				CDD21D0A2373252C005E6E32 /* AppDelegate.swift in Sources */,
+				CDD21D2E23732D75005E6E32 /* Card.swift in Sources */,
 				CDD21D2C23732C24005E6E32 /* Suit.swift in Sources */,
 				CDD21D0C2373252C005E6E32 /* SceneDelegate.swift in Sources */,
 			);

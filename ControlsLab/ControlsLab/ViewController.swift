@@ -10,7 +10,19 @@ class ViewController: UIViewController {
     
     // MARK: -Internal variables
     
-    var card: Card = Card(suit: .heart, value: .ace)
+    var card: Card = Card(suit: .heart, value: .ace) {
+        didSet {
+            valueLabels.forEach { $0.text = "\(card.value.getSymbol())" }
+            suitImageViews.forEach { $0.image = card.suit.getImage() }
+        }
+    }
+    
+    // MARK: -Lifecycle Overrides
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cardView.layer.borderWidth = 5
+    }
     
     // MARK: -IBActions
     

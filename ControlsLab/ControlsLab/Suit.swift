@@ -6,12 +6,25 @@ enum Suit: Int {
     case heart
     case club
     case spade
-    func getColor() -> UIColor {
+    
+    func getImage() -> UIImage {
         switch self {
-        case .diamond, .heart:
-            return .red
-        case .club, .spade:
-            return .black
+        case .diamond:
+            return UIImage(systemName: "suit.diamond.fill")!
+                .withRenderingMode(.alwaysTemplate)
+                .withTintColor(.red)
+        case .heart:
+            return UIImage(systemName: "suit.heart.fill")!
+                .withRenderingMode(.alwaysTemplate)
+                .withTintColor(.red)
+        case .club:
+            return UIImage(systemName: "suit.club.fill")!
+                .withRenderingMode(.alwaysTemplate)
+                .withTintColor(.black)
+        case .spade:
+            return UIImage(systemName: "suit.spade.fill")!
+                .withRenderingMode(.alwaysTemplate)
+                .withTintColor(.black)
         }
     }
 }

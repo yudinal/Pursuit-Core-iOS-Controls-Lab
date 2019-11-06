@@ -105,6 +105,9 @@
                                                     <segment title="" image="suit.club.fill" catalog="system"/>
                                                     <segment title="" image="suit.spade.fill" catalog="system"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="newSuitSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="cSy-VB-FGD"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -119,6 +122,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-w6-OIL">
                                                 <rect key="frame" x="5.5" y="28.5" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="cardValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hfc-OX-xee"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                     </stackView>
@@ -136,6 +142,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="lJ0-Hs-TIG" id="SuL-MN-4sr"/>
+                        <outletCollection property="valueLabels" destination="e7R-YL-hk9" collectionClass="NSMutableArray" id="EN2-Xi-s8a"/>
+                        <outletCollection property="valueLabels" destination="G1m-89-jEX" collectionClass="NSMutableArray" id="ClI-Sz-L4e"/>
+                        <outletCollection property="valueLabels" destination="QAA-Fv-tyc" collectionClass="NSMutableArray" id="sEF-Zd-c6u"/>
+                        <outletCollection property="suitImageViews" destination="k6i-bS-29D" collectionClass="NSMutableArray" id="BrF-eJ-9Le"/>
+                        <outletCollection property="suitImageViews" destination="xLl-cy-EJH" collectionClass="NSMutableArray" id="sjO-Mv-C8n"/>
+                        <outletCollection property="suitImageViews" destination="aMF-33-MCl" collectionClass="NSMutableArray" id="nwk-Ep-gxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

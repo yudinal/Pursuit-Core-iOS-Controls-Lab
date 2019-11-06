@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     @IBOutlet var suitImageViews: [UIImageView]!
     @IBOutlet var cardView: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -14,7 +15,6 @@ class ViewController: UIViewController {
         guard let suit = Suit(rawValue: sender.selectedSegmentIndex) else {
             fatalError("Developer Error: Unknown suit")
         }
-        
     }
     
     @IBAction func cardValueChanged(_ sender: UIStepper) {
